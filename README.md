@@ -78,6 +78,10 @@ var styles = StyleSheet.create({
 
 module.exports = VideoScreen;
 ```
+### Known issues
+
+Vitamio doesn't play video in android simulator.
+
 ## License
 
 MIT
