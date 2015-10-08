@@ -55,10 +55,6 @@ var VitamioView = require('react-native-android-vitamio');
 
 class VideoScreen extends React.Component {
   render() {
-    var TouchableElement = TouchableHighlight;
-    if (Platform.OS === 'android') {
-      TouchableElement = TouchableNativeFeedback;
-    }
     return (
       <View>
         <VitamioView style={styles.video} streamUrl="rtmp://fms.12E5.edgecastcdn.net/0012E5/mp4:videos/8Juv1MVa-485.mp4"/>
@@ -78,6 +74,7 @@ var styles = StyleSheet.create({
 
 module.exports = VideoScreen;
 ```
+
 ### Known issues
 
 Vitamio doesn't play video in android simulator.
