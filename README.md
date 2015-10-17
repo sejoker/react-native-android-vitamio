@@ -17,7 +17,8 @@ npm install --save react-native-android-vitamio
 include ':vitamio'
 project(':vitamio').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-vitamio/vitamio')
 include ':RNVitamioView'
-project(':RNVitamioView').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-vitamio')```
+project(':RNVitamioView').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-vitamio')
+```
 
 * In `android/app/build.gradle`
 
