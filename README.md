@@ -12,14 +12,27 @@ npm install --save react-native-android-vitamio
 
 * In `android/setting.gradle`
 
-TODO
+```gradle
+...
+include ':vitamio'
+project(':vitamio').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-vitamio/vitamio')
+include ':RNVitamioView'
+project(':RNVitamioView').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-vitamio')```
 
 * In `android/app/build.gradle`
 
-TODO
+```gradle
+...
+dependencies {
+    ...
+    compile project(':RNVitamioView')
+}
+```
+
+* register module (in MainActivity.java)
 
 ```java
-import com.ivanph.webintent.RNWebIntentPackage;;  // <--- import
+import com.sejoker.VitamView.VitamioViewPackage;  // <--- import
 
 public class MainActivity extends Activity implements DefaultHardwareBackBtnHandler {
   ......
