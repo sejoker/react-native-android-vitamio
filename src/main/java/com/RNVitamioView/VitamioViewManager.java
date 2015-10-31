@@ -7,7 +7,7 @@ import com.facebook.react.uimanager.BaseViewPropertyApplicator;
 import com.facebook.react.uimanager.CatalystStylesDiffMap;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.uimanager.UIProp;
+import com.facebook.react.uimanager.ReactProp;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.views.text.ReactTextShadowNode;
 
@@ -23,34 +23,27 @@ public class VitamioViewManager extends SimpleViewManager<VideoView> {
 
     private ThemedReactContext mContext = null;
 
-    @UIProp(UIProp.Type.STRING)
-    public static final String PROP_STREAM_URL = "streamUrl";
-
     public VitamioViewManager(Activity activity) {
       mActivity = activity;
     }
 
     @Override
     public String getName() {
-        return REACT_CLASS;
+      return REACT_CLASS;
     }
 
     @Override
     public VideoView createViewInstance(ThemedReactContext context) {
-        mContext = context;
-        return new VideoView(context);
+      mContext = context;
+      return new VideoView(context);
     }
 
-    @Override
-    public void updateView(final VideoView view,
-                           final CatalystStylesDiffMap props) {
-
+    @ReactProp(name = "streamUrl")
+    public void setStreamUrl(VideoView view, String streamUrl) {
       if (!LibsChecker.checkVitamioLibs(mActivity))
-          return;
+        return;
 
-      if (props.hasKey(PROP_STREAM_URL)) {
-        view.setVideoPath(props.getString(PROP_STREAM_URL));
-      }
+      view.setVideoPath(streamUrl);
 
       view.setMediaController(new MediaController(mContext));
       view.requestFocus();
@@ -62,7 +55,5 @@ public class VitamioViewManager extends SimpleViewManager<VideoView> {
           mediaPlayer.setPlaybackSpeed(1.0f);
         }
       });
-
-      super.updateView(view, props);
     }
 }
