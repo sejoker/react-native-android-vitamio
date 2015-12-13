@@ -2,6 +2,10 @@
 
 A React-native component for android [Vitamio video player](https://github.com/yixia/VitamioBundle).
 
+### Demo app
+
+https://github.com/sejoker/react-native-vitamio-demo
+
 ### Installation 
 
 ```bash
