@@ -18,11 +18,11 @@
   ],
   "author": "Yevgen Safronov",
   "license": "MIT",
-  "peerDependencies": {
-    "react-native": "^0.14.0"
-  },
   "bugs": {
     "url": "https://github.com/sejoker/react-native-android-vitamio/issues"
   },
-  "homepage": "https://github.com/sejoker/react-native-android-vitamio#readme"
+  "homepage": "https://github.com/sejoker/react-native-android-vitamio#readme",
+  "dependencies": {
+    "react-native": "^0.18.1"
+  }
 }

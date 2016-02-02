@@ -39,7 +39,7 @@ public class VitamioViewManager extends SimpleViewManager<VideoView> {
     }
 
     @ReactProp(name = "streamUrl")
-    public void setStreamUrl(VideoView view, String streamUrl) {
+    public void setStreamUrl(VideoView view, @Nullable String streamUrl) {
       if (!LibsChecker.checkVitamioLibs(mActivity))
         return;
 
