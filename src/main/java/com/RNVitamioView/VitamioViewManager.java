@@ -1,5 +1,7 @@
 package com.sejoker.VitamView;
 
+import javax.annotation.Nullable;
+
 import android.app.Activity;
 
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -7,7 +9,7 @@ import com.facebook.react.uimanager.BaseViewPropertyApplicator;
 import com.facebook.react.uimanager.CatalystStylesDiffMap;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
-import com.facebook.react.uimanager.ReactProp;
+import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.views.text.ReactTextShadowNode;
 
