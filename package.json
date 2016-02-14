@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-vitamio",
-  "version": "1.0.3",
+  "version": "2.1.0",
   "description": "React-native component for android Vitamio video player",
   "main": "index.js",
   "scripts": {
@@ -18,9 +18,6 @@
   ],
   "author": "Yevgen Safronov",
   "license": "MIT",
-  "peerDependencies": {
-    "react-native": "^0.11.2"
-  },
   "bugs": {
     "url": "https://github.com/sejoker/react-native-android-vitamio/issues"
   },
