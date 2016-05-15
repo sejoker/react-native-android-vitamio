@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-vitamio",
-  "version": "4.1.1",
+  "version": "5.0.0",
   "description": "React-native component for android Vitamio video player",
   "main": "index.js",
   "scripts": {

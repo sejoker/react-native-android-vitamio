@@ -3,9 +3,8 @@
 
 A React-native component for android [Vitamio video player](https://github.com/yixia/VitamioBundle).
 
-Deprecated in favor of [react-native-video](https://github.com/brentvatne/react-native-video).
 
-Does not support ReactNative 0.19+.
+Supports ReactNative 0.19.
 
 ### Demo app
 
@@ -39,7 +38,7 @@ dependencies {
 }
 ```
 
-* register module on React Native = 0.18 (in MainActivity.java)
+* register module on React Native >= 0.18 (in MainActivity.java)
 ```java
 package com.vitamio_demo;
 
@@ -87,7 +86,7 @@ public class MainActivity extends ReactActivity {
 
 ```
 
-* register module on React Native < 0.19 (in MainActivity.java)
+* register module on React Native < 0.18 (in MainActivity.java)
 ```java
 import com.sejoker.VitamView.VitamioViewPackage;  // <--- import
 
