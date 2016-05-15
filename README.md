@@ -4,7 +4,7 @@
 A React-native component for android [Vitamio video player](https://github.com/yixia/VitamioBundle).
 
 
-Supports ReactNative 0.19.
+Supports React Native 0.21.
 
 ### Demo app
 
@@ -147,6 +147,7 @@ module.exports = VideoScreen;
 ### Known issues
 
 Vitamio doesn't play video in android simulator.
+Video doesn't start automatically, touch the screen and press start.
 
 ## License
 
