@@ -1,6 +1,11 @@
+
 # react-native-android-vitamio
 
 A React-native component for android [Vitamio video player](https://github.com/yixia/VitamioBundle).
+
+Deprecated in favor of [react-native-video](https://github.com/brentvatne/react-native-video).
+
+Does not support ReactNative 0.19+.
 
 ### Demo app
 
