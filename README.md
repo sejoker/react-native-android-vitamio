@@ -34,7 +34,7 @@ dependencies {
 }
 ```
 
-* register module on React Native >= 0.19 (in MainActivity.java)
+* register module on React Native = 0.18 (in MainActivity.java)
 ```java
 package com.vitamio_demo;
 

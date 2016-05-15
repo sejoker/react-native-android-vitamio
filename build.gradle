@@ -13,6 +13,6 @@ android {
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:0.22.+'
+    compile 'com.facebook.react:react-native:0.18.+'
     compile project(':vitamio')
 }
