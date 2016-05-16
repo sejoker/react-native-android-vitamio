@@ -4,7 +4,7 @@
 A React-native component for android [Vitamio video player](https://github.com/yixia/VitamioBundle).
 
 
-Supports React Native 0.21.
+Supports React Native up to 0.21.
 
 ### Demo app
 
